@@ -6,13 +6,13 @@ use Inertia\Inertia;
 use Inertia\Response;
 use App\Models\Informacion;
 
-class InformacionController extends Controller
+class ComponenteController extends Controller
 {
     public function index(): Response
     {
         $informacion = $this->getInfo();
 
-        return Inertia::render('Informacion', [
+        return Inertia::render('Componente', [
             'informacion' => $informacion, // Cambiado de 'empleado' a 'empleados'
         ]);
     }

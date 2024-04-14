@@ -5,6 +5,9 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\InformacionController;
+use App\Http\Controllers\UserController;
+
+
 
 
 
@@ -25,9 +28,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-    Route::get('/informacion', function () {
-        return Inertia::render('Informacion');
-    })->name('informacion.index');
+
+    Route::get('/informacion', [InformacionController::class, 'index'])->name('informacion.index');
+    Route::get('/componente', [InformacionController::class, 'index'])->name('componente.index');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

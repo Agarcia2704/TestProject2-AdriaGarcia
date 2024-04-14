@@ -21,3 +21,11 @@ createInertiaApp({
         color: '#4B5563',
     },
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    ClassicEditor
+        .create(document.querySelector('#editor'))
+        .catch(error => {
+            console.error(error);
+        });
+});
