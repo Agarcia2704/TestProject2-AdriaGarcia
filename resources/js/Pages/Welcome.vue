@@ -37,7 +37,7 @@ function handleImageError() {
         <nav class="bg-white border-gray-200 dark:bg-gray-900">
             <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
                 <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="imgs/logo.png" class="h-8" alt="Flowbite Logo" />
+                    <img src="../../../public/imgs/logo.png" class="h-8" alt="Flowbite Logo" />
                     <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Adria</span>
                 </a>
                 <div class="flex items-center md:order-2 space-x-1 md:space-x-2 rtl:space-x-reverse">
@@ -68,17 +68,17 @@ function handleImageError() {
         <div class="relative h-56 overflow-hidden md:h-96">
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="imgs/img1.jpg"
+                <img src="../../../public/imgs/img1.jpg"
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
             <!-- Item 2 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="imgs/img2.jpg"
+                <img src="../../../public/imgs/img2.jpg"
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
             <!-- Item 3 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="imgs/img3.jpg"
+                <img src="../../../public/imgs/img3.jpg"
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
         </div>

@@ -31,6 +31,8 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/informacion', [InformacionController::class, 'index'])->name('informacion.index');
     Route::get('/componente', [InformacionController::class, 'index'])->name('componente.index');
+    Route::resource('users', UserController::class);
 });
 
 require __DIR__ . '/auth.php';
+
