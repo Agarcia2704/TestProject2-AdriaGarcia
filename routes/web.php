@@ -6,8 +6,8 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\InformacionController;
 use App\Http\Controllers\UserController;
-
-
+use App\Http\Controllers\GestioController;
+use App\Http\Controllers\GestioContingutsController;
 
 
 
@@ -30,6 +30,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     Route::get('/informacion', [InformacionController::class, 'index'])->name('informacion.index');
+    Route::get('/gestio', [GestioController::class, 'index'])->name('gestio.index');
+    Route::get('/continguts', [GestioContingutsController::class, 'index'])->name('continguts.index');
     Route::get('/componente', [InformacionController::class, 'index'])->name('componente.index');
     Route::resource('users', UserController::class);
 });

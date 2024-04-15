@@ -4,6 +4,7 @@ import { Head } from '@inertiajs/vue3';
 import 'flowbite';
 import { ref, defineProps, onMounted } from 'vue';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import Cookies from '@/Components/Cookies.vue';
 
 // Inicializa CKEditor cuando el componente se monta en el DOM
 onMounted(() => {
@@ -23,6 +24,8 @@ onMounted(() => {
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">Pàgina d'inici</h2>
         </template>
+
+        <Cookies />
 
         <div id="default-carousel" class="relative w-full" data-carousel="slide">
         <!-- Carousel wrapper -->
