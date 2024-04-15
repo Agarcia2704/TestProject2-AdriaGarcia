@@ -21,7 +21,7 @@ onMounted(() => {
 
     <AuthenticatedLayout>
         <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">Dashboard</h2>
+            <h2 class="font-semibold text-xl text-gray-800 leading-tight">Pàgina d'inici</h2>
         </template>
 
         <div id="default-carousel" class="relative w-full" data-carousel="slide">
@@ -81,8 +81,12 @@ onMounted(() => {
         </button>
     </div>
 
-    <textarea name="content" id="editor"></textarea>
-
+    <div class="mt-8 text-center">
+            <p class="text-lg text-gray-700">
+                Benvingut a la nostra plataforma d'aprenentatge en línia! Aquí, la diversió es combina amb l'educació per oferir-te una experiència d'aprenentatge única. Ja no més avorriment a l'aula o distraccions a les xarxes socials; al nostre Entorn Virtual d'Aprenentatge (EVA), et proporcionarem les eines i recursos necessaris per aprendre de manera efectiva i, sobretot, divertida. Comença el teu viatge d'aprenentatge emocionant amb nosaltres!
+            </p>
+        </div>
+   
     </AuthenticatedLayout>
 </template>
     
