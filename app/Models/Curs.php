@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Informacion extends Model
+class Curs extends Model
 {
     use HasFactory;
 
-    protected $table = 'informacion'; // Nombre de la tabla en la base de datos
+    protected $table = 'curs'; // Nombre de la tabla en la base de datos
 
     protected $fillable = [
         'nom',
@@ -18,7 +18,7 @@ class Informacion extends Model
         'visible',
     ];
 
-    public static function getInformacion() {
+    public static function getCurs() {
         return self::all();
     }
 }

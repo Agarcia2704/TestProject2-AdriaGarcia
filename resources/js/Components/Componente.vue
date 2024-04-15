@@ -21,7 +21,7 @@ onMounted(() => {
           <ul>
             <div name="content" id="editor">
             <li v-for="info in informacion" :key="info.id">
-              {{ info.nombre }} {{ info.apellido }}
+              {{ info.nom }} {{ info.descripcio }}
             </li>
           </div>
           </ul>
