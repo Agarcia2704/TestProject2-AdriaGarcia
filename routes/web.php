@@ -32,7 +32,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/informacion', [InformacionController::class, 'index'])->name('informacion.index');
 
     Route::get('/gestio', [GestioController::class, 'index'])->name('gestio.index');
-    Route::delete('/eliminar-curso/{id}', 'GestioController@destroy')->name('eliminar-curso');
+    Route::delete('/gestio/{id}', 'GestioController@destroy')->name('eliminar-curso');
 
     Route::get('/continguts', [GestioContingutsController::class, 'index'])->name('continguts.index');
     Route::get('/componente', [InformacionController::class, 'index'])->name('componente.index');

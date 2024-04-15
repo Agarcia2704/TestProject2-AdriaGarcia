@@ -7,7 +7,7 @@ use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 use App\Models\User;
 
-class MarcosTest extends TestCase
+class AdriaTest extends TestCase
 {
     /**
      * A basic test example.
@@ -18,7 +18,7 @@ class MarcosTest extends TestCase
     {
         $user = User::factory()->create();
         $this->actingAs($user);
-        $response = $this->get(route('empleados.index'));
+        $response = $this->get(route('gestio.index'));
         $response->assertStatus(200);
     }
 }

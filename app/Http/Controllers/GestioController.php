@@ -30,7 +30,7 @@ class GestioController extends Controller
 
         Informacion::create($request->all());
 
-        return response()->json(['message' => 'Curso creado correctamente']);
+        return response()->json(['message' => 'Curs creat correctament']);
     }
 
     public function update(Request $request, $id)

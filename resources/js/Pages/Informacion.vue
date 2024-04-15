@@ -1,5 +1,6 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 </script>
 <template>
   <AuthenticatedLayout>
@@ -16,7 +17,7 @@ import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
               Continguts
             </button>
             <div v-if="showDropdown === info.id" class="mt-2 bg-gray-100 p-2 rounded-md">
-              <!-- Contenido adicional aquí -->
+              <textarea name="content" id="editor"></textarea>
             </div>
           </div>
         </div>
